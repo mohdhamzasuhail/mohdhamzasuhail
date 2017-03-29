@@ -1,0 +1,4 @@
+User-Agent: *
+
+
+Sitemap: http://inceptumtechnologies.co.in/sitemap.xml

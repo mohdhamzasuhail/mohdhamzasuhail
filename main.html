@@ -43,19 +43,18 @@
       <div class="container">
           <div class="row">
               <div class="col-md-12">
-                <div id="main-text">
-                  <h1 class="color-sec"><span>Hello</span></h1><br>
-                  <h3>I'M MOHD HAMZA SUHAIL.</h3>
-                  <h1 class="color">A WEB DESIGNER<span style="color:#fff;">/</span>FRONT-END DEVELOPER</h1>
-                  <h3>BRIDGING THE GAP BETWEEN DESIGNER AND BACK-END DEVELOPER</span> SINCE 2016.</h3><br>
-                  <div class="center"></div>
-                  <br>
+                <h1 class="color-sec"><span>Hello</span></h1><br>
+                <h3>I'M MOHD HAMZA SUHAIL.</h3>
+                <h1 class="color">A WEB DESIGNER<span style="color:#fff;">/</span>FRONT-END DEVELOPER</h1>
+                <h3>BRIDGING THE GAP BETWEEN DESIGNER AND BACK-END DEVELOPER SINCE 2016.</h3><br>
+                <div class="center"></div>
+                <br>
 
-                  <span class="menu-button" onclick="openNav()"><i class="fa fa-bars"></i></span>
-                  <span class="top-button"><a href="#home"><i class="fa fa-chevron-up"></i></a></span>
+                <span class="menu-button" onclick="openNav()"><i class="fa fa-bars"></i></span>
+                <span class="top-button"><a href="#home"><i class="fa fa-chevron-up"></i></a></span>
 
-                  <div id="mySidenav" class="sidenav">
-                    <ul style="list-style:none;">
+                <div id="mySidenav" class="sidenav">
+                  <ul style="list-style:none;">
                       <li>
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color:#D32F2F;"><i class="fa fa-times-circle"></i></a>
                       </li>
@@ -63,18 +62,67 @@
                         <a href="#home" onclick="closeNav()">Home</a>
                       </li>
                       <li>
+                        <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                      </li>
+                      <li>
                         <a href="#about" onclick="closeNav()">About</a>
                       </li>
                       <li>
                         <a href="#contact" onclick="closeNav()">Contact</a>
                       </li>
-                    </ul>
-                  </div>
+                  </ul>
                 </div>
+
               </div>
           </div>
       </div>
     </header>
+
+    <section class="diagonal" id="portfolio">
+
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h2>
+                      <span>PORTOLIO</span>
+                  </h2>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="box">
+                      <br><br><br>
+                      <img src="img/6.png" class="img-centered img-responsive" width="200">
+                  </div>
+                  <br>
+              </div>
+              <div class="col-md-3">
+                  <div class="box">
+                      <br><br>
+                      <img src="img/logo.png" class="img-centered img-responsive" width="200">
+                  </div>
+                  <br>
+              </div>
+
+              <div class="col-md-3">
+                  <div class="box">
+                    <br>
+                    <img src="img/tgfs.png" class="img-centered img-responsive" width="150">
+                  </div>
+                  <br>
+              </div>
+              <div class="col-md-3">
+                  <div class="box">
+                    <br><br><br>
+                    <img src="img/cres-logo.png" class="img-centered img-responsive" width="200">
+                  </div>
+                  <br>
+              </div>
+          </div>
+      </div>
+      <br><br><br><br>
+    </section>
 
     <section class="diagonal" id="about">
 
@@ -91,19 +139,20 @@
               <div class="col-md-6">
                   <h3 class="color-sec">Who I Am</h3>
                   <p>
-                      I am sure you just want to check my work out, so I'll be quick. I am not the smartest, but I am smart. Currently, I live in Aligarh and work as UI/UX Head for Inceptum Technologies. Strong engineering professional with an ongoing Bachelor's degree focused in Chemical Engineering from Aligarh Muslim University.
+                      I am sure you just want to check my work out, so I'll be quick. I am not the smartest, but I am smart. Currently, I live in Aligarh and work as UI/UX Head for Inceptum Technologies, a web development startup in Mumbai.
                   </p>
-                  <br>
-                  <h3 class="color-sec">What I Do</h3>
-                  <p>
-                       Build websites. I specialize in front-end development (HTML5, CSS3, JavaScript) but many times I get my hands dirty with some backend (PHP, MySQL). If you want to work with me or just say "hey hamza, what's up?" for no reason what so ever, send me an <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@mohdhamza.me">email</a>.
-                  </p>
-
-                  <a href="downloads/mohd_hamza_suhail_resume.pdf" download class="btn btn-custom">Download CV</a>
-
               </div>
               <div class="col-md-6">
-                <br><br>
+                  <h3 class="color-sec">What I Do</h3>
+                  <p>
+                       Build websites. I specialize in front-end development (HTML5, CSS3, JavaScript) but many times I get my hands dirty with some backend (PHP, MySQL). If you want to work with me or just say "hey hamza, what's up?" for no reason what so ever, send me an email.
+                  </p>
+              </div>
+          </div>
+          <br>
+          <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
                 <div class="skillbar clearfix " data-percent="100%">
                   <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
                   <div class="skillbar-bar" style="background: #e67e22;"></div>
@@ -227,15 +276,19 @@
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/94c499c15a.js"></script>
 
+    <!-- AOS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
-    $(document).keyup(function(e) {
-      if (e.keyCode === 27) {
-        document.getElementById("mySidenav").style.width = "0";
-        $(".menu-button").fadeIn();
-        $(".top-button").fadeIn();
-      }
-    });
+      AOS.init();
+    </script>
+    <script>
+    function enter(e){
+        if (e.keyCode === 13) {
+          $(".main-text").fadeOut();
 
+          e.preventDefault();
+        }
+    }
     </script>
     <script>
       jQuery(document).ready(function(){

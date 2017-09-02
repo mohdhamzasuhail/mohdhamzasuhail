@@ -167,7 +167,7 @@ p {
 }
 
 .main h2 span {
-  padding:0 50px;
+  padding:0 30px;
   border: 2px solid #555;
   background: #1a1a1a;
 }
@@ -223,21 +223,25 @@ footer.diagonal {
 }
 
 .box {
-  height: 250px;
   text-align: center;
   padding: 25px;
-  border: 1px solid #555;
-  border-radius: 10px;
-  background: url(../img/bg3.png) repeat center center;
-  background-size:auto;
-  background-attachment: fixed;
-  transition: 0.5s;
-}
-
-.box:hover {
+  color: #fff;
+  background-color: #222;
+  height: 150px;
+  max-height: 150px;
   transition: 0.5s;
   box-shadow: 2.5px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+.box:hover {
+  cursor: crosshair;
+  background-color: #fff;
+}
+
+.img-resize {
+    height: 75px;
+}
+
 .btn-custom {
   background-color: #D32F2F;
   color:#fff;
@@ -339,12 +343,24 @@ footer.diagonal {
   background: url(../img/bg-small.png) repeat center center;
   background-size:auto;
   background-attachment: scroll;
+  padding-bottom:10%;
+  padding-top: 5%;
 }
 
 #contact {
-  background: #fff;
+  background: url(../img/bg-small.png) repeat center center;
+  background-size:auto;
+  background-attachment: scroll;
   color:#1a1a1a;
 }
+
+#projects {
+  background-color: #1a1a1a;
+  color:#1a1a1a;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+
 
 .skillbar {
 	position:relative;
